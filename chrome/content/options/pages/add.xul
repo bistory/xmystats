@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<dialog buttons="accept, cancel" id="xmystats-resize-dialog" ondialogaccept="return XMY_saveAccount()" ondialogcancel="XMY_cancelAccount()" onload="XMY_initAddCompte()" title="Ajout d'un compte" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://xmystats/content/options/options.js"/>
+	<groupbox>
+		<caption label="Ajout d'un compte"/>
+		<grid>
+			<rows>
+				<row align="center">
+					<label control="xmystats.add.libelle" flex="1" value="Libellé : "/>
+					<textbox id="xmystats.add.libelle" size="20"/>
+				</row>
+				<row align="center">
+					<label control="xmystats.add.identifiant" flex="1" value="Identifiant : "/>
+					<textbox id="xmystats.add.identifiant" size="20"/>
+				</row>
+				<row align="center">
+					<label control="xmystats.add.password" flex="1" value="Mot de passe : "/>
+					<textbox type="password" id="xmystats.add.password" size="20"/>
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+</dialog>

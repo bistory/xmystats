@@ -1,0 +1,34 @@
+<h1>XMyStats v0.4.2 - changements</h1>
+	<p><em>Point important :</em> il vous faut redéfinir vos identifiants pour Comclick en utilisant la régie "Comtrack".</p>
+	<h2>Bugs</h2>
+		<h3>Bug TradeDoubler / Horyzon-Clics / Paypal</h3>
+			<p>Le séparateur des milliers n'est pas habituel.</p>
+		<h3>Bug Paypal</h3>
+			<p>Les statistiques récupérées sont incomplètes.</p>
+		<h3>Bug Effiliation</h3>
+			<p>La toolbar est incapable de récupérer les chiffres des dizaines, centaines, ...</p>
+		<h3>Recherche depuis le cache</h3>
+			<ul>
+				<li>Un bug s'est introduit dans la gestion du cache des statistiques des régies, et plus précisément dans leur affichage une fois récupérées.</li>
+				<li>Multiples petits bugs résolus par la même occasion.</li>
+			</ul>
+	<h2>Fonctionnalités</h2>
+		<h3>Configuration personnalisée</h3>
+			<p>Page de configuration d'un compte personnalisée suivant la régie.</p>
+		<h3>Passage des caractères spéciaux en hexadécimal</h3>
+		<h3>Redéfinition du tableau des régies</h3>
+			<p>Transformation de la construction du tableau xmystats_regies[]</p>
+		<h3>Redéfinition des fonctions XMY_param_{regie}</h3>
+			<p>Utilisation de la syntaxe des objets pour la redéfinition.</p>
+		<h3>Utilisation de issetor pour les variables de régies</h3>
+			<p>Utilisation de la fonction XMY_issetor pour les variables des régies pour simplification du code.</p>
+		<h3>C-Marketing</h3>
+			<ul>
+				<li>Connexion automatique.</li>
+				<li>Récupération des statistiques pour les périodes : veille, mois, mois précédent.</li>
+			</ul>
+		<h3>AdToCash</h3>
+			<ul>
+				<li>Fusion de Comclick et AdToCash vers Comtrack.</li>
+				<li>Faites bien attention à <strong>redéfinir vos identifiants</strong> pour Comtrack.</li>
+			</ul>

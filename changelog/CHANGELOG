@@ -1,0 +1,4 @@
+* 0.4.4 - 2010-04-15 *
+	* Fork of the trunk repository from Sourceforge
+	* Bring the compatibility with the new version of Allopass
+	* Restore compatibility with recent versions of Firefox

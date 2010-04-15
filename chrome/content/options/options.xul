@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xmystats/content/stats/stats.css" type="text/css"?>
+<?xml-stylesheet href="chrome://xmystats/content/options/options.css" type="text/css"?>
+<dialog buttons="accept" id="xmystats-options-dialog" title="Options de la Toolbar XMyStats" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="XMY_initOptions();">
+	<script type="application/x-javascript" src="chrome://xmystats/content/common.js"/>
+    <script type="application/x-javascript" src="chrome://xmystats/content/preferences.js"/>
+	<script type="application/x-javascript" src="chrome://xmystats/content/options/options.js"/>
+	<tabbox flex="1">
+		<tabs>
+			<tab label="Comptes"/>
+			<tab label="Préférences"/>
+			<tab label="A propos"/>
+		</tabs>
+		<tabpanels>
+			<tabpanel pack="center">
+				<hbox flex="1">
+					<listbox id="xmystats-page-list" onselect="XMY_changePage(this)" flex="1"/>
+					<vbox flex="3">
+						<iframe flex="1" id="xmystats-options-iframe" src="chrome://xmystats/content/options/pages/comptes.xul"/>
+					</vbox>
+				</hbox>
+			</tabpanel>
+			<tabpanel pack="center">
+				<hbox flex="1">
+					<iframe flex="1" id="xmystats-preferences-iframe" src="chrome://xmystats/content/options/pages/preferences.xul"/>
+				</hbox>
+			</tabpanel>
+			<tabpanel pack="center">
+				<vbox>
+					<hbox>
+						<spacer flex="1" />
+						<image src="chrome://xmystats/skin/pics/about.png" />
+						<spacer flex="1" />
+					</hbox>
+					<grid>
+						<rows id="xmystats-stats-rows" class="xmystatsStyleRows">
+							<row align="center">
+								<label value="Version :" style="font-weight: bold;"/>
+								<label value="0.4.2"/>
+							</row>
+							<row align="center">
+								<label value="Auteur :" style="font-weight: bold;"/>
+								<label value="Jean Henriot"/>
+							</row>
+							<row align="center">
+								<label value="Développeur :" style="font-weight: bold;"/>
+								<label value="Benjamin Hoyé"/>
+							</row>
+							<row align="center">
+								<label value="Site officiel :" style="font-weight: bold;"/>
+								<label value="http://www.xmystats.com" onclick="window.open('http://www.xmystats.com/');" class="url"/>
+							</row>
+							<row align="center">
+								<label value="Site SourceForge :" style="font-weight: bold;"/>
+								<label value="http://xmystats.sourceforge.net" onclick="window.open('http://xmystats.sourceforge.net/');" class="url"/>
+							</row>
+						</rows>
+					</grid>
+				</vbox>
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+</dialog>

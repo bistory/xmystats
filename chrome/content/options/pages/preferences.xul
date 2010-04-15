@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xmystats/content/stats/stats.css" type="text/css"?>
+<?xml-stylesheet href="chrome://xmystats/content/options/options.css" type="text/css"?>
+<page onload="parent.XMY_loadPreferences();" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<hbox flex="1">
+		<vbox flex="1">
+			<groupbox flex="1">
+				<caption label="Ouverture des pages"/>
+				<hbox align="top">
+					<radiogroup onclick="parent.XMY_prefSetString('pref-a', this.value);">
+						<radio id="XMYSTATS-pref-a-1" value="1" label="Dans un nouvel onglet"/>
+						<radio id="XMYSTATS-pref-a-2" value="2" label="Dans l'onglet sélectionné"/>
+					</radiogroup>
+				</hbox>
+			</groupbox>
+			<groupbox flex="1">
+				<caption label="Présentation des régies"/>
+				<hbox align="top">
+					<radiogroup onclick="parent.XMY_prefSetString('pref-c', this.value);">
+						<radio id="XMYSTATS-pref-c-1" value="1" label="Logo + Nom de la régie"/>
+						<radio id="XMYSTATS-pref-c-2" value="2" label="Seulement le nom de la régie"/>
+						<radio id="XMYSTATS-pref-c-3" value="3" label="Seulement le logo"/>
+					</radiogroup>
+				</hbox>
+			</groupbox>
+		</vbox>
+		<vbox flex="1">
+			<groupbox flex="1">
+				<caption label="Timeout avant déconnexion (en secondes)" />
+				<textbox id="XMYSTATS-pref-maxTimeOut" oninput="parent.XMY_prefSetInt('pref-maxTimeOut', this.value);" size="4" type="number" min="1" max="60"/>
+			</groupbox>
+			<groupbox flex="1">
+				<caption label="Durée de mise en cache (en minutes)" />
+				<textbox id="XMYSTATS-pref-maxCacheTime" oninput="parent.XMY_prefSetInt('pref-maxCacheTime', this.value);" size="3" type="number" min="1"/>
+			</groupbox>
+			<groupbox flex="1">
+				<caption label="Taux des devises (laisser vide pour automatique)" />
+				<hbox>
+					<label control="XMYSTATS-pref-usdToEur">Conversion $ -> € : </label>
+					<spacer flex="1" />
+					<textbox id="XMYSTATS-pref-usdToEur" oninput="parent.XMY_prefSetString('pref-usdToEur', this.value);" size="12"/>
+				</hbox>
+			</groupbox>
+		</vbox>
+	</hbox>
+</page>

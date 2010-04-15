@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$EC5Ai3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0.0.0"
+                   em:maxVersion="3.7a1pre"
+                   em:updateLink="http://xmystats.sourceforge.net/dev/xmystats.xpi"
+                   em:updateHash="sha1:92a19f22b4434152eff45816c19446de93d6ea66" />
+  <RDF:Seq RDF:about="rdf:#$AC5Ai3">
+    <RDF:li RDF:resource="rdf:#$BC5Ai3"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$BC5Ai3"
+                   em:version="0.4.4">
+    <em:targetApplication RDF:resource="rdf:#$EC5Ai3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:{b4a59c65-03f1-44fd-86fe-54c6317f2832}"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAD0FtvUpba1qC+52cqBbkvHrYT2Yd55sTYtRQ1L9n9iLneBuPj+CLMP9ROe+4oeQnnSEMlmJgi2hNRAfzjMQaak5n86AOzVLZ0GkPmPvQsnqK0GyJ6c7rsvkQtJ3xpmtBYPNAqw5oFVlxHDLC+OXElpzkYcTYe+5j0plVNT0pE9p">
+    <em:updates RDF:resource="rdf:#$AC5Ai3"/>
+  </RDF:Description>
+</RDF:RDF>

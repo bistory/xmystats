@@ -1,0 +1,3 @@
+content xmystats jar:chrome/xmystats.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://xmystats/content/xmystats.xul
+skin xmystats classic/1.0 jar:chrome/xmystats.jar!/skin/

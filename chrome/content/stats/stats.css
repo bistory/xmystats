@@ -1,0 +1,57 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+hbox > label {
+    margin-left: 0 !important;
+}
+
+spacer.large-spacer {
+    width: 20px !important;
+}
+
+spacer.small-spacer {
+    width: 10px !important;
+}
+
+.number, .numberbold {
+	text-align: right;
+}
+
+.numberP, .numberboldP {
+	text-align: right;
+	color: gray;
+}
+
+.numberbold, .bold {
+	font-weight: bold;
+}
+
+#xmystats-image-loading {
+	width: 16px;
+	height: 16px;
+}
+
+#xmystats-image-loading.loading {
+	list-style-image: url("chrome://xmystats/skin/pics/loading.gif");
+}
+#xmystats-image-loading.loaded {
+	list-style-image: url("chrome://xmystats/skin/pics/ok.png");
+}
+
+
+rows.xmystatsStyleRows label {
+	margin: 0;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	border-left: 1px solid #EBEBEB;
+	border-right: 1px solid #CCCCCC;
+}
+
+rows.xmystatsStyleRows row.regie label, label.xmystatsStyleLabelTitre {
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #CCCCCC;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}

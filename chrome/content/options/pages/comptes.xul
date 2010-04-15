@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xmystats/content/stats/stats.css" type="text/css"?>
+<?xml-stylesheet href="chrome://xmystats/content/options/options.css" type="text/css"?>
+<page onload="parent.XMY_loadOptions();" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript" src="chrome://xmystats/content/lib/browser.js"/>
+    <script type="application/x-javascript" src="chrome://xmystats/content/preferences.js"/>
+	<groupbox>
+		<caption id="xmystats-caption" />
+		<hbox>
+			<listbox flex="1" id="xmystats-listbox" rows="3">
+				<listhead id="xmystats-listbox-listhead">
+					<listheader label="Libellé"/>
+					<listheader label="Identifiant"/>
+				</listhead>
+				<listcols>
+					<listcol flex="1"/>
+					<listcol flex="1"/>
+				</listcols>
+			</listbox>
+		</hbox>
+		<hbox>
+			<button label="Ajouter" oncommand="parent.XMY_addCompte()"/>
+			<spacer flex="1" />
+			<button label="Editer" oncommand="parent.XMY_editCompte()"/>
+			<spacer flex="1" />
+			<button label="Supprimer" oncommand="parent.XMY_delCompte()"/>
+		</hbox>
+	</groupbox>
+	<groupbox flex="1" align="center" pack="center">
+		<caption label="Informations" />
+		<hbox>
+			<label id="xmystats-recuperation-stats"/>
+		</hbox>
+		<hbox>
+			<button id="xmystats-visit-regie" label="Site Web" disabled="true"/>
+			<button id="xmystats-visit-wmc" label="WebmasterClub.fr" disabled="true"/>
+		</hbox>
+	</groupbox>
+</page>

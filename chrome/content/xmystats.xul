@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xmystats/skin/xmystats.css" type="text/css"?>
+<overlay id="XMYSTATS-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://xmystats/content/common.js"/>
+	<script type="application/x-javascript" src="chrome://xmystats/content/preferences.js"/>
+	<script type="application/x-javascript" src="chrome://xmystats/content/news.js"/>
+	<script type="application/x-javascript" src="chrome://xmystats/content/xmystats.js"/>
+	<toolbox id="navigator-toolbox">
+		<toolbar id="XMYSTATS-Toolbar" class="chromeclass-toolbar" context="toolbar-context-menu" toolbarname="XMyStats Toolbar" hidden="false" persist="hidden">
+			<toolbarbutton id="XMYSTATS-btn-xmystats" tooltiptext="Résumé de vos statistiques" label="XMyStats" oncommand="XMY_openStats()" />
+			<toolbarseparator />
+			<hbox id="XMYSTATS-WebBox" />
+			<toolbarseparator id="XMYSTATS-separator-limit"/>
+			<toolbarbutton id="XMYSTATS-btn-options" tooltiptext="Configuration de la Toolbar" label="Configuration ..." oncommand="XMY_openOptions()" />
+			<spacer flex="1" />
+		</toolbar>
+	</toolbox>
+</overlay>

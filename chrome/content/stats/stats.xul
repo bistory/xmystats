@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://xmystats/content/stats/stats.css" type="text/css"?>
+<window id="xmystats-options-dialog" title="[XMyStats] Vos statistiques" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="XMY_initStats()">
+    <script type="application/x-javascript" src="chrome://xmystats/content/common.js"/>
+    <script type="application/x-javascript" src="chrome://xmystats/content/preferences.js"/>
+    <script type="application/x-javascript" src="chrome://xmystats/content/stats/stats.js"/>
+	<hbox pack="center" flex="1" style="overflow: auto;">
+		<vbox>
+			<groupbox>
+				<caption id="xmystats-label-loading" label="Chargement en cours ..."/>
+				<hbox>
+					<progressmeter id="xmystats-progress" mode="determined" value="0" flex="1"/>
+					<vbox>
+						<image id="xmystats-image-loading" class="loading"/>
+						<spacer flex="1" />
+					</vbox>
+				</hbox>
+			</groupbox>
+			<tabbox flex="1">
+				<tabs>
+					<tab label="Général"/>
+					<tab label="Ventes / formulaires"/>
+				</tabs>
+				<tabpanels>
+					<tabpanel id="xmystats-stats-tab-general" pack="center">
+						<grid>
+							<rows id="xmystats-stats-rows" class="xmystatsStyleRows">
+								<row align="center">
+									<label flex="1" value=" " />
+									<label value="Jour" style="font-weight: bold; text-align: center;"/>
+									<label value="J-1" style="font-weight: bold; text-align: center;"/>
+									<label value="Mois" style="font-weight: bold; text-align: center;"/>
+									<label value="M-1" style="font-weight: bold; text-align: center;"/>
+									<label value="Solde" style="font-weight: bold; text-align: center;"/>
+								</row>
+								<row align="center" style="font-weight: bold">
+									<label value="TOTAL :"/>
+									<label id="xmystats-stat-jour" value="-" class="number" />
+									<label id="xmystats-stat-j-1" value="-" class="numberP" />
+									<label id="xmystats-stat-mois" value="-" class="number" />
+									<label id="xmystats-stat-m-1" value="-" class="numberP" />
+									<label id="xmystats-stat-total" value="-" class="number" />
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel id="xmystats-stats-tab-form" align="center" pack="center">
+					<!-- 
+						<grid>
+							<rows id="xmystats-forms-rows" class="xmystatsStyleRows">
+								<row align="center">
+									<label value="   " style="font-weight: bold;"/>
+									<label value="Programme" style="font-weight: bold;" flex="1"/>
+									<label value="Jour" style="font-weight: bold; text-align: center;"/>
+									<label value="J-1" style="font-weight: bold; text-align: center;"/>
+									<label value="Mois" style="font-weight: bold; text-align: center;"/>
+									<label value="M-1" style="font-weight: bold; text-align: center;"/>
+								</row>
+							</rows>
+						</grid>
+					 -->
+					 	<label align="center" pack="center">Bientôt ...</label>
+					</tabpanel>
+				</tabpanels>
+			</tabbox>
+		</vbox>
+	</hbox>
+</window>

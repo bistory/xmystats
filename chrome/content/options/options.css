@@ -1,0 +1,30 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#xmystats-options-dialog {
+    height: 25em !important;
+    width: 45em !important;
+}
+
+#xmystats-page-list {
+    width: 10em !important;
+}
+
+.indent {
+    margin-left: 25px !important;
+}
+
+.scroll {
+	height: 25em !important;
+	overflow: auto !important;
+}
+
+.url {
+    color: #0000ff !important;
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+
+.url:hover {
+    color: #ff0000 !important;
+}

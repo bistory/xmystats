@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{b4a59c65-03f1-44fd-86fe-54c6317f2832}</em:id>
+    <em:name>XMyStats Toolbar</em:name>
+    <em:version>0.4.4</em:version>
+    <em:description>La Toolbar de l'affilié.</em:description>
+    <em:creator>Benjamin Hoyé (I-Magine SARL)</em:creator>
+    <em:iconURL>chrome://xmystats/skin/pics/icon.png</em:iconURL>
+    <em:optionsURL>chrome://xmystats/content/options/options.xul</em:optionsURL>
+    <em:homepageURL>http://www.xmystats.com/</em:homepageURL>
+
+    <em:targetApplication>
+      <!-- Firefox -->
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.0</em:minVersion>
+        <em:maxVersion>3.7a1pre</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
