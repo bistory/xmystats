@@ -2,21 +2,22 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$EC5Ai3"
+  <RDF:Description RDF:about="rdf:#$QZ6dh1"
+                   em:version="0.4.4.1">
+    <em:targetApplication RDF:resource="rdf:#$TZ6dh1"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$TZ6dh1"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.0.0.0"
-                   em:maxVersion="3.7a1pre"
-                   em:updateLink="http://xmystats.sourceforge.net/dev/xmystats.xpi"
-                   em:updateHash="sha1:92a19f22b4434152eff45816c19446de93d6ea66" />
-  <RDF:Seq RDF:about="rdf:#$AC5Ai3">
-    <RDF:li RDF:resource="rdf:#$BC5Ai3"/>
+                   em:minVersion="3.0"
+                   em:maxVersion="3.7a4"
+                   em:updateLink="http://wikeo.be/Contrib/xmystats/xmystats.xpi"
+                   em:updateHash="sha1:de25cf9646d0004a9309531310df0b8998ca866e"
+                   em:updateInfoURL="http://github.com/bistory/xmystats/blob/master/changelog/CHANGELOG" />
+  <RDF:Description RDF:about="urn:mozilla:extension:xmystats@xmystats.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBALUgdNNxi3i9LwPRxYfj5mUUu11jTdhkX5aIJ/ywyv7vx7YHG0QncQGW+48m29uKUaRT24rsoP133qqJc4X0HvHxUcVgL80ZmNVidczYBb94C9YIur1hkXGMtrjZPy2rXx41X4LwSOAUae5fXM/LxKoVbsED0M21baAe1eifdSwl">
+    <em:updates RDF:resource="rdf:#$PZ6dh1"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$PZ6dh1">
+    <RDF:li RDF:resource="rdf:#$QZ6dh1"/>
   </RDF:Seq>
-  <RDF:Description RDF:about="rdf:#$BC5Ai3"
-                   em:version="0.4.4">
-    <em:targetApplication RDF:resource="rdf:#$EC5Ai3"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:{b4a59c65-03f1-44fd-86fe-54c6317f2832}"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAD0FtvUpba1qC+52cqBbkvHrYT2Yd55sTYtRQ1L9n9iLneBuPj+CLMP9ROe+4oeQnnSEMlmJgi2hNRAfzjMQaak5n86AOzVLZ0GkPmPvQsnqK0GyJ6c7rsvkQtJ3xpmtBYPNAqw5oFVlxHDLC+OXElpzkYcTYe+5j0plVNT0pE9p">
-    <em:updates RDF:resource="rdf:#$AC5Ai3"/>
-  </RDF:Description>
 </RDF:RDF>
